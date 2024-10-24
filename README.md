@@ -3,7 +3,7 @@
 
 # Sendu-fp
 
-_Sendu Fast Printer_ allows to print labels from existing Work Orders from your registered Shop in [Sendu](app.sendu.cl) using the default printer of the host OS.
+_Sendu Fast Printer_ allows to print labels from existing Work Orders from your registered Shop in [Sendu](https://app.sendu.cl/users/sign_in) using the default printer of the host OS.
 
 ## Features
 
