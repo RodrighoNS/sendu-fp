@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="./ui/output.css" data-trunk rel="css" />
+
+    <script type="text/javascript" src="./index.js"></script>
+
+    <style>
+      .toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ff4c4c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeout {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="header">Impresión rápida de Etiquetas</h1>
+    </header>
+
+    <main>
+      <form id="nameform">
+        <label for="label"
+          >Importa el ID de Venta o Referencia desde un lector de código de
+          barras o QR</label
+        >
+        <br />
+        <input
+          type="text"
+          id="orderID"
+          name="input_text"
+          required
+          autofocus
+          minlength="1"
+          maxlength="50"
+          size="80"
+          placeholder="Ingresa el ID de Venta o Referencia"
+        />
+      </form>
+
+      <button onclick="fetchApiData()">Imprimir</button>
+
+      <!-- Area to display fetched API data -->
+      <div id="api-data"></div>
+    </main>
+    <br />
+    <footer>
+      <p>Copyright © 2024 Sendu - Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

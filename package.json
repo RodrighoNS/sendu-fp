@@ -1,0 +1,331 @@
+{
+  "name": "sendu-fp",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "tauri-api": {
+      "name": "tauri-api",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-utils": {
+      "name": "tauri-utils",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-window": {
+      "name": "tauri-window",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-dialog": {
+      "name": "tauri-dialog",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-path": {
+      "name": "tauri-path",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-menu": {
+      "name": "tauri-menu",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-fs": {
+      "name": "tauri-fs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-async": {
+      "name": "tauri-async",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-clipboard": {
+      "name": "tauri-clipboard",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-store": {
+      "name": "tauri-plugin-store",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-state": {
+      "name": "tauri-plugin-window-state",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-autostart": {
+      "name": "tauri-plugin-autostart",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-notification": {
+      "name": "tauri-plugin-notification",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-fs-watch": {
+      "name": "tauri-plugin-fs-watch",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "tauri-plugin-fs-watch-api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-start": {
+      "name": "tauri-plugin-window-start",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-logger": {
+      "name": "tauri-plugin-logger",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-s3": {
+      "name": "tauri-plugin-s3",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-http": {
+      "name": "tauri-plugin-http",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-sql": {
+      "name": "tauri-plugin-sql",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-title": {
+      "name": "tauri-plugin-window-set-title",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-decorations": {
+      "name": "tauri-plugin-window-set-decorations",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-center": {
+      "name": "tauri-plugin-window-center",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-maximize": {
+      "name": "tauri-plugin-window-maximize",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-minimize": {
+      "name": "tauri-plugin-window-minimize",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-close": {
+      "name": "tauri-plugin-window-close",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-hide": {
+      "name": "tauri-plugin-window-hide",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-unhide": {
+      "name": "tauri-plugin-window-unhide",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-focus": {
+      "name": "tauri-plugin-window-focus",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-focus": {
+      "name": "tauri-plugin-window-set-focus",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-unmaximize": {
+      "name": "tauri-plugin-window-unmaximize",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-unminimize": {
+      "name": "tauri-plugin-window-unminimize",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-is-maximized": {
+      "name": "tauri-plugin-window-is-maximized",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-is-minimized": {
+      "name": "tauri-plugin-window-is-minimized",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-is-visible": {
+      "name": "tauri-plugin-window-is-visible",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-is-focused": {
+      "name": "tauri-plugin-window-is-focused",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-size": {
+      "name": "tauri-plugin-window-set-size",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-position": {
+      "name": "tauri-plugin-window-set-position",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-min-size": {
+      "name": "tauri-plugin-window-set-min-size",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-max-size": {
+      "name": "tauri-plugin-window-set-max-size",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    },
+    "tauri-plugin-window-set-menu": {
+      "name": "tauri-plugin-window-set-menu",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "@tauri-apps/api": "^1.0.0"
+      }
+    }
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.2",
+    "@tauri-app/core": "^2.0.0-alpha.1"
+  }
+}
