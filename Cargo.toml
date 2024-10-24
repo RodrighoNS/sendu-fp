@@ -23,6 +23,7 @@ reqwest = { version = "0.12.8", features = ["blocking", "json"] }
 lazy_static = { version = "1.4.0" }
 tauri-bundler = "1.6.0"
 pacman = "0.1.3"
+version = "3.0.0"
 
 [dependencies.uuid]
 version = "1.10.0"
