@@ -28,7 +28,7 @@ static USER_TOKEN: Lazy<String> = Lazy::new(|| {
 
 static TMP_FOLDER: Lazy<String> = Lazy::new(|| {
     dotenv().ok();
-    env::var("TMP_FOLDER").expect("TMP_FOLDER is not set in .env")
+    env::var("TMP_FOLDER").unwrap_or("/tmp".to_string())
 });
 
 static BASE_URL: Lazy<String> = Lazy::new(|| {
