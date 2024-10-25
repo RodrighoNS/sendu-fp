@@ -1,6 +1,7 @@
+const invoke = window.__TAURI__.invoke;
+
 async function fetchApiData() {
   const orderID = document.getElementById("orderID").value;
-  const invoke = window.__TAURI__.invoke;
 
   try {
     const result = await invoke("get_label", {
@@ -28,3 +29,15 @@ function showToast(message) {
     toast.remove();
   }, 4000);
 }
+
+async function loadVersion() {
+  try {
+    const version = await invoke("get_app_version");
+    document.getElementById("version").textContent = `v${version}`;
+  } catch (error) {
+    console.error("Failed to load version:", error);
+    document.getElementById("version").textContent = "Version: Not available";
+  }
+}
+
+loadVersion();
