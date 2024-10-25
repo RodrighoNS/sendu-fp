@@ -6,8 +6,8 @@ mod client;
 
 fn main() {
   tauri::Builder::default()
-    .invoke_handler(tauri::generate_handler![client::get_label])
     .invoke_handler(tauri::generate_handler![get_app_version])
+    .invoke_handler(tauri::generate_handler![client::get_label])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

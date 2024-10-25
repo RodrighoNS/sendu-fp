@@ -9,15 +9,32 @@ use uuid::Uuid;
 use tauri::command;
 use std::process::Command;
 use reqwest::StatusCode;
+use dotenvy::dotenv;
+use once_cell::sync::Lazy;
+use std::env;
 
 #[cfg(target_os = "windows")]
 use std::process::Stdio;
 
-// Constants for user_email and user_token
-const USER_EMAIL: &str = "fe.encina.c@gmail.com";
-const USER_TOKEN: &str = "5NN8CxWDdAJQu4DX1FuQ";
-const TMP_FOLDER: &str = "./tmp";
-const BASE_URL: &str = "https://sendu.garagelabs.cl/api/v2";
+static USER_EMAIL: Lazy<String> = Lazy::new(|| {
+    dotenv().ok();
+    env::var("USER_EMAIL").expect("USER_EMAIL is not set in .env")
+});
+
+static USER_TOKEN: Lazy<String> = Lazy::new(|| {
+    dotenv().ok();
+    env::var("USER_TOKEN").expect("USER_TOKEN is not set in .env")
+});
+
+static TMP_FOLDER: Lazy<String> = Lazy::new(|| {
+    dotenv().ok();
+    env::var("TMP_FOLDER").expect("TMP_FOLDER is not set in .env")
+});
+
+static BASE_URL: Lazy<String> = Lazy::new(|| {
+    dotenv().ok();
+    env::var("BASE_URL").expect("BASE_URL is not set in .env")
+});
 
 // Mutex to store the last downloaded file path
 lazy_static::lazy_static! {
@@ -26,9 +43,10 @@ lazy_static::lazy_static! {
 
 #[command]
 pub fn get_label(order_id: String) -> Result<Value, String> {
+    let base_url = BASE_URL.clone();
+    let tmp_folder = TMP_FOLDER.clone();
     // Append orderID as query param
-    let url = format!("{BASE_URL}/find_label?orderID={}", order_id);
-
+    let url = format!("{base_url}/find_label?orderID={}", order_id);
     // Create a UUID for the unique directory name
     let uuid = Uuid::new_v4();
 
@@ -39,8 +57,8 @@ pub fn get_label(order_id: String) -> Result<Value, String> {
     let response = client
         .get(&url)
         .header("Content-Type", "application/json")
-        .header("X-User-Email", USER_EMAIL)
-        .header("X-User-Token", USER_TOKEN)
+        .header("X-User-Email", USER_EMAIL.clone())
+        .header("X-User-Token", USER_TOKEN.clone())
         .send()
         .map_err(|err| err.to_string())?;
 
@@ -84,7 +102,7 @@ pub fn get_label(order_id: String) -> Result<Value, String> {
         .unwrap_or("unknown_file");
 
     // Use the order_id and UUID to create a unique directory for the downloaded file
-    let unique_dir = format!("{TMP_FOLDER}/{order_id}_{}", uuid);
+    let unique_dir = format!("{tmp_folder}/{order_id}_{}", uuid);
     create_dir_all(&unique_dir).map_err(|err| err.to_string())?;
 
     // Define the path to save the file in the unique directory

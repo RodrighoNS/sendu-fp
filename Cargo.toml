@@ -24,6 +24,8 @@ lazy_static = { version = "1.4.0" }
 tauri-bundler = "1.6.0"
 pacman = "0.1.3"
 version = "3.0.0"
+dotenvy = "0.15.7"
+once_cell = "1.20.2"
 
 [dependencies.uuid]
 version = "1.10.0"
