@@ -1,10 +1,8 @@
-const invoke = window.__TAURI__.invoke;
-
 async function fetchApiData() {
   const orderID = document.getElementById("orderID").value;
 
   try {
-    const result = await invoke("get_label", {
+    const result = await window.__TAURI__.invoke("get_label", {
       orderId: orderID,
     });
 
@@ -32,7 +30,7 @@ function showToast(message) {
 
 async function loadVersion() {
   try {
-    const version = await invoke("get_app_version");
+    const version = await window.__TAURI__.invoke("get_app_version");
     document.getElementById("version").textContent = `v${version}`;
   } catch (error) {
     console.error("Failed to load version:", error);
