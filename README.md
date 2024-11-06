@@ -16,6 +16,8 @@ _Sendu Fast Printer_ allows to print labels from existing Work Orders from your 
 
 Before installation start, make sure your OS fulfill all the [prerequisites](https://v2.tauri.app/es/start/prerequisites/) needed.
 
+[!IMPORTANT] Don't forget to create and fullfill the `.env` file with your Sendu credentials before continue.
+
 After that, you can use:
 
 ```bash
@@ -26,6 +28,14 @@ To get the app running. Alternatively you can use the flag `--no-watch` in order
 
 ```bash
   cargo tauri dev --no-watch
+```
+
+## Building
+
+[WIP]
+
+```bash
+  # TODO: add commands if needed
 ```
 
 ## Deployment
